@@ -5,6 +5,7 @@ Rapid and significant urban land use development of Maricopa County (metropolita
 
 ## Repository Structure
 
+```bash
 |── biodiversity_intact_index_phoenix
 ├── README.md
 ├── biodiversity_index_phoenix.ipynb 
@@ -17,6 +18,7 @@ Rapid and significant urban land use development of Maricopa County (metropolita
       ├── tl_2022_04_cousub.shp.ea.iso.xml
       ├── tl_2022_04_cousub.shp.iso.xml
       └── tl_2022_04_cousub.shx
+```  
   
  ## Data Access
  - The 2017 and 2020 BII (Biodiversity Intactness Index) Time Series data comes from the Microsoft Planetary Computer STAC catalog. I have also use the Census Bureau County Subdivisions shapefiles to retreive the Phoenix subdivision polyogon. Arizona. The data has been put into the .gitignore.
