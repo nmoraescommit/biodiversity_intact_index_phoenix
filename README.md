@@ -5,8 +5,7 @@ Rapid and significant urban land use development of Maricopa County (metropolita
 
 <img src="https://i0.wp.com/oncemoretotheshore.com/wp-content/uploads/2021/04/Camelback-Mountain_Phoenix_Robin-Catalano-travel-writer.jpg?w=1200&ssl=1" alt="Arizona Desert Scenery" width="700"/>
 
- (Photo courtesy of Visit Phoenix/dspaz.com.)
-Image credits: [Once More. to](https://oncemoretotheshore.com/wits-virtual-tour-phoenix-arizona/)
+Image credits: [Once More to the Shore](https://oncemoretotheshore.com/wits-virtual-tour-phoenix-arizona/)
 
 ## Repository Structure
 
