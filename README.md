@@ -3,6 +3,8 @@
 ## About
 Rapid and significant urban land use development of Maricopa County (metropolitan Phoenix, Arizona) has impacted the biodiversity in the area. This project seeks to assess and visualize any BII loss in Phoenix, over the years of 2017 to 2020.
 
+https://ideal-living.com/wp-content/uploads/2013/12/Phoenix_Cactus-640x427-1.jpg
+
 ## Repository Structure
 
 ```bash
@@ -20,9 +22,23 @@ Rapid and significant urban land use development of Maricopa County (metropolita
       └── tl_2022_04_cousub.shx
 ```  
   
- ## Data Access
- - The 2017 and 2020 BII (Biodiversity Intactness Index) Time Series data comes from the Microsoft Planetary Computer STAC catalog. I have also use the Census Bureau County Subdivisions shapefiles to retreive the Phoenix subdivision polyogon. Arizona. The data has been put into the .gitignore.
+ ## Data Description and Access
+ 
+ **1.Biodiversity Intactness Index (BII) Time Series**
+
+Biodiversity intactness index data was accessed from [ Microsoft Planetary Computer STAC catalog](https://planetarycomputer.microsoft.com/dataset/io-biodiversity). I accessed the io-biodiversity collection from the Microsoft Planetary Computer STAC catalog using an API. This data contains terrestrial Biodiversity Intactness maps from 2017 to 2020. To read in the data, `pystac_client` and `planetary computer` are used to access data from the MPC, and a catalog search using the `io-biodiversity` collection and specified time range and bbox were used to retrieve the items of interest. 
+
+**2. Phoenix Subdivision Shapefile** 
+
+Phoenix shapefile was obtained from the United States [Census Bureau Tiger/Shapeline files](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html). County subdivision census data from 2024 was used to filter to our area of interest. Data was downloaded as a shapefile and placed it into the data folder, where `os` was used to create an absolute filepath, and the `GeoPandas` package was used to read in the file via `gpd.read_file()`.
+
+**3. Data Access**
+The data is currently in the .gitignore in this repository.
  
 ### References:
 - Microsoft Planetary Computer. (n.d.). IO biodiversity dataset. Retrieved December 3, 2024, from https://planetarycomputer.microsoft.com/dataset/io-biodiversity\n"
 - U.S. Census Bureau. (2024). Arizona county subdivisions: tl_2024_04_cousub.shp [Shapefile dataset]. Retrieved from https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=County+Subdivisions \n",
+
+## Acknowledgements
+
+This repository was created as the final assignment for the graduate course EDS 220: Working with Environmental Datasets in the [Masters of Environmental Data Science (MEDS) program](https://bren.ucsb.edu/masters-programs/master-environmental-data-science), taught by [Dr. Carmen Galaz García](https://github.com/carmengg).
