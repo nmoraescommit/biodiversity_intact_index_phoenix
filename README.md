@@ -3,9 +3,10 @@
 ## About
 Rapid and significant urban land use development of Maricopa County (metropolitan Phoenix, Arizona) has impacted the biodiversity in the area. This project seeks to assess and visualize any BII loss in Phoenix, over the years of 2017 to 2020.
 
-https://ideal-living.com/wp-content/uploads/2013/12/Phoenix_Cactus-640x427-1.jpg
+<img src="https://i0.wp.com/oncemoretotheshore.com/wp-content/uploads/2021/04/Camelback-Mountain_Phoenix_Robin-Catalano-travel-writer.jpg?w=1200&ssl=1" alt="Arizona Desert Scenery" width="700"/>
 
-Image credits: [Visit Phoenix](https://ideal-living.com/desert-phoenix-az/)
+ (Photo courtesy of Visit Phoenix/dspaz.com.)
+Image credits: [Once More. to](https://oncemoretotheshore.com/wits-virtual-tour-phoenix-arizona/)
 
 ## Repository Structure
 
