@@ -5,6 +5,8 @@ Rapid and significant urban land use development of Maricopa County (metropolita
 
 https://ideal-living.com/wp-content/uploads/2013/12/Phoenix_Cactus-640x427-1.jpg
 
+Image credits: [Visit Phoenix](https://ideal-living.com/desert-phoenix-az/)
+
 ## Repository Structure
 
 ```bash
