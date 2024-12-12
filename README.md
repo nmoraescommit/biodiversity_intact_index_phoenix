@@ -5,8 +5,6 @@ Rapid and significant urban land use development of Maricopa County (metropolita
 
 <img src="https://i0.wp.com/oncemoretotheshore.com/wp-content/uploads/2021/04/Camelback-Mountain_Phoenix_Robin-Catalano-travel-writer.jpg?w=1200&ssl=1" alt="Arizona Desert Scenery" width="700"/>
 
-Image credits: [Once More to the Shore](https://oncemoretotheshore.com/wits-virtual-tour-phoenix-arizona/)
-
 ## Repository Structure
 
 ```bash
@@ -28,16 +26,19 @@ Image credits: [Once More to the Shore](https://oncemoretotheshore.com/wits-virt
  
  **1.Biodiversity Intactness Index (BII) Time Series**
 
-Biodiversity intactness index data was accessed from [ Microsoft Planetary Computer STAC catalog](https://planetarycomputer.microsoft.com/dataset/io-biodiversity). I accessed the io-biodiversity collection from the Microsoft Planetary Computer STAC catalog using an API. This data contains terrestrial Biodiversity Intactness maps from 2017 to 2020. To read in the data, `pystac_client` and `planetary computer` are used to access data from the MPC, and a catalog search using the `io-biodiversity` collection and specified time range and bbox were used to retrieve the items of interest. 
+Biodiversity intactness index data was accessed from [ Microsoft Planetary Computer STAC catalog](https://planetarycomputer.microsoft.com/dataset/io-biodiversity). I used the `pystac_client` API to access the `io-biodiversity` collection from the catalog, that intersected the area and time of relevance to this project. The datasets "estimate terrestrial Biodiversity Intactness as 100-meter gridded maps for the years 2017-2020". [(Microsoft Datasets| Biodiversity Intactness)](https://planetarycomputer.microsoft.com/dataset/io-biodiversity)
 
 **2. Phoenix Subdivision Shapefile** 
 
-Phoenix shapefile was obtained from the United States [Census Bureau Tiger/Shapeline files](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html). County subdivision census data from 2024 was used to filter to our area of interest. Data was downloaded as a shapefile and placed it into the data folder, where `os` was used to create an absolute filepath, and the `GeoPandas` package was used to read in the file via `gpd.read_file()`.
+Phoenix shapefile was dowloaded as a shapfilee from the [United States Census Bureau| TIGER/ Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Census+Tracts), and was saved to the data folder  To access, visit the link below and download the file `tl_2022_04_cousub.shp` to a data folder.
+County subdivision census data from 2024 was used to filter to our area of interest. Data was downloaded as a shapefile and placed it into the data folder, where `os` was used to create an absolute filepath, and the `GeoPandas` package was used to read in the file via `gpd.read_file()`.
 
 **3. Data Access**
-The data is currently in the .gitignore in this repository.
+
+All stored data required to run the `biodiv_index.ipynb` notebook is currently stored in the .gitignore in this repository. Currently, this data is only the Phoenix subdivision shapefiles.
  
 ### References:
+
 - Microsoft Planetary Computer. (n.d.). IO biodiversity dataset. Retrieved December 3, 2024, from https://planetarycomputer.microsoft.com/dataset/io-biodiversity\n"
 - U.S. Census Bureau. (2024). Arizona county subdivisions: tl_2024_04_cousub.shp [Shapefile dataset]. Retrieved from https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=County+Subdivisions \n",
 
