@@ -30,8 +30,7 @@ Biodiversity intactness index data was accessed from [ Microsoft Planetary Compu
 
 **2. Phoenix Subdivision Shapefile** 
 
-Phoenix shapefile was dowloaded as a shapfilee from the [United States Census Bureau| TIGER/ Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Census+Tracts), and was saved to the data folder  To access, visit the link below and download the file `tl_2022_04_cousub.shp` to a data folder.
-County subdivision census data from 2024 was used to filter to our area of interest. Data was downloaded as a shapefile and placed it into the data folder, where `os` was used to create an absolute filepath, and the `GeoPandas` package was used to read in the file via `gpd.read_file()`.
+Phoenix shapefile was dowloaded as a shapfilee from the [United States Census Bureau| TIGER/ Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Census+Tracts), and was saved to the data folder. To access, visit the link below and download the file `tl_2022_04_cousub.shp` to a data folder.
 
 **3. Data Access**
 
